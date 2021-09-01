@@ -1,0 +1,12 @@
+/* background img  */
+#background{
+    
+    background: url(img/new.jpg) no-repeat;
+    
+    background-size: cover;
+    background-position:center center;
+    height: 150vh;
+  
+  
+  
+};

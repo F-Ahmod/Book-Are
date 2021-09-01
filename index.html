@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পছন্দের বই</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+    </style>
+</head>
+<body id="background">
+    <!-- search and input section  -->
+    <header class="bg-success p-4 mb-3 fixed-top">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/book.png" alt="">
+                </div>
+                 <div class="col-md-6">
+                    <div class="input-group mt-lg-5 mb-3"> 
+                        <input id="input" type="text" class="form-control" placeholder="আপনার পছন্দের বই খোঁজোন" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="bg-info" type="button" id="search">Button</button>
+                      </div>
+                 </div>
+            </div>
+        </div>
+    </header>
+
+<!-- search Result -->
+      <main>
+        <section>
+            <!-- <img src="img/new.jpg" alt=""> -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 mt-3" id="books"> 
+            </div>
+        </section>
+      </main>
+    <!-- footer section -->
+    <!-- <footer>
+        <p>Thanks for using our site <br>
+            <small>©2011 Allcopyright reservd </small>
+
+        </p>
+        
+        
+
+    </footer> -->
+      <script src="index.js"></script>
+</body>
+</html>
