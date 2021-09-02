@@ -2,16 +2,12 @@
 const toggleLoding= spinnerstyle =>{
     document.getElementById('loadingSpinner').style.display=spinnerstyle;
   }
-const toggleSearch= spinnerstyle =>{
-    document.getElementById('books').style.display=spinnerstyle;
-  }
 
   
 // search and input sectin 
 document.getElementById('search').addEventListener('click' , function(){
     const searchInput=document.getElementById('input');
     toggleLoding('block');
-    toggleSearch('none')
     const searchText=searchInput.value;
     searchInput.value='';
     fetch(`https://openlibrary.org/search.json?q=${searchText}`)
@@ -63,7 +59,7 @@ const displaybook= books =>{
     bookDiv.appendChild(div); 
 });
 toggleLoding('none');
-toggleSearch('block')
+
 
 }; 
 
