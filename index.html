@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
-    
+    <link rel="stylesheet" href="style.css">
+     
 </head>
-<body id="background">
+  
+
+<body class="bg-secondary">
     <!-- search and input section  -->
-    <header class="bg-success p-1 mb-3 fixed-top">
+    <header class="bg-success p-2 text-white bg-opacity-25 p-1 mb-3">
         <div class="container" >
             <div class="row">
                 <div class="col-md-6">
@@ -20,17 +22,27 @@
                  <div class="col-md-6">
                     <div class="input-group mt-lg-5 mb-3"> 
                         <input id="input" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="bg-info" type="button" id="search">Button</button>
+                        <button onclick="input()" class="bg-info" type="button" id="search">Button</button>
                       </div>
                  </div>
             </div>
         </div>
     </header>
+    <!-- spinner  -->
+  <div class="container ">
+    <div id="loadingSpinner" class="spinner-border " role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+  </div>
+<!-- showTotal  -->
 
+<div id="countSearch">
+
+</div>
 <!-- search Result -->
       <main>
-        <section>
-            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 mt-3" id="books"> 
+        <section >
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 mt-3 " id="books"> 
             </div>
         </section>
         

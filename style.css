@@ -1,13 +1,6 @@
-/* background img  */
-#background{
-    
-    background: url(img/new.jpg);
-    
-    background-size: cover;
-    background-position:center center;
-    height: 150vh;
+
+  #loadingSpinner{
+      
+      display: none;
+  };
   
-  
-  
-};
- 
